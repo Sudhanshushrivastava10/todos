@@ -10,21 +10,10 @@ import {BrowserRouter as Router,Route} from "react-router-dom";
 import AllList from "./component/AllList";
 import UpdateProject from "./component/UpdateProject";
 import List from "./component/List";
-import GithubLogin from 'react-github-login';
-import Home from "./component/Home";
 
 function App() {
-  const responsegit=(response)=>{
-    console.log(response);
-    <Home/>
-  };
   return (
 <div>
-  <GithubLogin 
-  ClientId="75063ec45a73ff34e039"
-  clientSecret="af92b053fb8f19b658f648f25d27e258d8a63072"
-  onSuccess={<App/>}
-  onFailure={responsegit}/>
   <Router>
   <ToastContainer />
 <Container>
